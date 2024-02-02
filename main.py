@@ -40,8 +40,8 @@ if __name__ == '__main__':
     end = time.time()
     print(f"[INFO] {end-start} Extract & Tranform Process is Done .....")
 
-    # # load
-    print(f"[INFO] Load Load is Running .....")
+    # Load
+    print(f"[INFO] Load is Running .....")
     start = time.time()
 
     conn_dwh, engine_dwh  = connection.dwh_conn()

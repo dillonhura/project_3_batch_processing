@@ -1,4 +1,18 @@
 -- transform to dwh
+-- script running directly on postgres
+INSERT INTO dwh_project3.dim_orders (
+	order_id,
+	order_date,
+	user_id,
+	payment_name,
+	shipper_name,
+	order_price,
+	order_discount,
+	voucher_name,
+	voucher_price,
+	order_total,
+	rating_status
+)
 SELECT
     o.order_id,
     o.order_date,
